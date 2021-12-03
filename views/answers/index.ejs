@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="icon" href="https://i.ibb.co/YZv3X6F/1613491158332.jpg" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">Answers </h1>
+        
+
+        <% answers.forEach(answer=>{%>
+            <div class="card mt-4">
+
+                <div class="card-body">
+                    <h6 class="card-title">
+                        firstname:  <%= answer.firstname %>
+                    </h6>
+                     <hr class="my-4">
+                    <h6 class="card-title">
+                        lastname:  <%= answer.lastname %>
+                    </h6>
+                    <hr class="my-4">
+                    <h6 class="card-title">
+                        phone: <%= answer.phone %>
+                    </h6>
+
+                    <hr class="my-4">
+
+                    <h6 class="card-title">
+                        email:  <%= answer.email %>
+                     </h6>
+ 
+
+                   
+
+                    <hr class="my-4">
+
+                    <h6 class="card-title">
+                        sector: <%= answer.sector %>
+                     </h6>
+ 
+
+                     <h6 class="card-title">
+                        activity : <%= answer.activity %>
+                     </h6>
+
+
+                     <h6 class="card-title">
+                        GlobalComplexity:   <%= answer.GlobalComplexity %> %
+                     </h6>
+
+
+                     <h6 class="card-title">
+                        Pricingmaturity:   <%= answer.Pricingmaturity %> %
+                     </h6>
+
+                     <h6 class="card-title">
+                        Human ressources:   <%= answer.hr %> %
+                     </h6>
+
+                    
+                     <h6 class="card-title">
+                        Tools:   <%= answer.tool %> %
+                     </h6>
+ 
+                     <h6 class="card-title">
+                        Data:   <%= answer.data %> %
+                     </h6>
+ 
+
+
+                     <h6 class="card-title">
+                        Organization:   <%= answer.organization %> %
+                     </h6>
+ 
+ 
+                     <h6 class="card-title">
+                        Process & dashboards:   <%= answer.process %> %
+                     </h6>
+ 
+
+                     
+                     <h6 class="card-title">
+                        Zone:   <%= answer.zone %> 
+                     </h6>
+ 
+ 
+ 
+ 
+                    
+                    
+                  
+
+                    
+
+
+                </div>
+
+            </div>
+
+
+            <%}) %>
+    </div>
+
+</body>
+
+</html>

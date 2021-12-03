@@ -76,7 +76,7 @@ app.set('view engine','ejs')
 app.get('/', async (req,res)=>{
    
     
-    res.sendFile(path.join(__dirname,"angular","index.html"))
+    res.sendFile(path.join(__dirname,"angular-film","index.html"))
 })
 
 app.use('/', require('./routes/index'))

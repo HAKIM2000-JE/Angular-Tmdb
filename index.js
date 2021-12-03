@@ -19,7 +19,7 @@ const questionRouter = require('./routes/question')
 const userRouter = require('./routes/user')
 
 
-app.use(express.static(__dirname + './angular-film'));
+app.use('/',express.static(path.join("angular-film")))
 
 var cors = require('cors')
 
@@ -73,7 +73,7 @@ app.use('/auth', require('./routes/auth'))
 app.set('view engine','ejs')
 
 
-app.get('/', async (req,res)=>{
+app.get('/*', async (req,res)=>{
    
     
     res.sendFile(path.join(__dirname,"angular-film","index.html"))

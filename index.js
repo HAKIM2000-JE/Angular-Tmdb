@@ -5,6 +5,8 @@ const session = require('express-session')
 const passport = require('passport')
 const methodOverride = require('method-override')
 
+const path = require('path')
+
 const articleRouter= require('./routes/articles')
 
 const answerRouter = require('./routes/answers')

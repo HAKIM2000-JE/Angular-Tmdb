@@ -18,6 +18,7 @@ const questionRouter = require('./routes/question')
 
 const userRouter = require('./routes/user')
 
+const CommentaireRouter = require('./routes/commentaire')
 
 app.use('/',express.static(path.join("angular-film")))
 
@@ -62,6 +63,9 @@ app.use('/films', filmRouter)
 app.use('/questions', questionRouter)
 
 app.use('/user', userRouter)
+
+
+app.use('/commentaire', CommentaireRouter)
 
 
 

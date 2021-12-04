@@ -16,22 +16,6 @@ const nodemailer = require('nodemailer');
 const log = console.log;
 
 
-// Step 1
-let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'prigmatest@gmail.com', // TODO: your gmail account
-        pass: 'prigma1234'// TODO: your gmail password
-    }
-});
-
-// Step 2
-let mailOptions = {
-    from: 'prigmatest@gmail.com', // TODO: email sender
-    to: 'darkboyhakim@gmail.com', // TODO: email receiver
-    subject: 'Nodemailer - Test',
-    text: 'Wooohooo it works!!'
-};
 
 
 const send = (email)=>{
@@ -116,13 +100,6 @@ function savefilmAndRedirect(path) {
 
 
 
-                let mailOptions = {
-                    from: 'abdelhakimjebabra7@gmail.com', // TODO: email sender
-                    to:film.email , // TODO: email receiver
-                    subject: 'Princing maturity Test Result',
-                    text: 'Wooohooo it works!!'
-                };
-            
 
               
 
